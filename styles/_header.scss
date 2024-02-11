@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  margin-top: 14px;
+  z-index: 1;
+
+  nav {
+    position: relative;
+    background-color: $white;
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+
+  &_logo {
+    img {
+      width: 140px;
+      height: 18px;
+    }
+  }
+
+  &_menu {
+    width: calc(100% - 48px);
+    margin-left: 20%;
+    background: $white;
+    a {
+      position: relative;
+      font-size: $font-sm;
+      color: $grayishBlue;
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+}
